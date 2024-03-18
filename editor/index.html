@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Image Editor</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #canvas {
+            border: 1px solid black;
+        }
+        .editor-controls {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="imageInput" accept="image/*">
+    <div class="editor-controls">
+        <select id="filterSelect">
+            <option value="none">None</option>
+            <option value="grayscale">Grayscale</option>
+            <option value="sepia">Sepia</option>
+        </select>
+        <button id="applyFilter">Apply Filter</button>
+        <button id="undo">Undo</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="app.js"></script>
+</body>
+</html>
